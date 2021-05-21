@@ -1,0 +1,44 @@
+###
+POST http://localhost:1234/medico/cadastrar
+Content-Type: application/json
+
+{
+    "data" : "2021-04-30" ,
+    "cadastro" : [
+        {
+            "nome" : "André",
+            "crm" : "KPOIOJ",
+            "especialidade" : "Médico Geral"
+        }
+    ]
+}
+
+###
+POST http://localhost:1234/medico/buscar/crm
+Content-Type: application/json
+{
+    "data" : "2021-04-30",
+    "cadastro" : [
+        {
+            "crm" : "ABDCE"
+        }
+    ]
+}
+
+###
+GET http://localhost:1234/medico/listar/
+
+###
+GET http://localhost:1234/medico/alterar
+
+###
+POST http://localhost:1234/medico/remover/crm
+Content-Type: application/json
+{
+    "data" : "2021-04-30",
+    "cadastro" : [
+        {
+            "crm" : "ABDCE"
+        }
+    ]
+}
